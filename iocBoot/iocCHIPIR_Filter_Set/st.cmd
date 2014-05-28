@@ -30,7 +30,7 @@ CHIPIR_Filter_Set_registerRecordDeviceDriver pdbbase
 ## the "options" argument is a combination of the following flags (as per the #lvDCOMOptions enum in lvDCOMInterface.h)
 ##    viWarnIfIdle=1, viStartIfIdle=2, viStopOnExitIfStarted=4, viAlwaysStopOnExit=8
 #lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/CHIPIR_Filter_SetApp/protocol/CHIPIR_Filter_Set.xml", "ndxchipir", 6, "", "spudulike", "reliablebeam")
-lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/CHIPIR_Filter_SetApp/protocol/CHIPIR_Filter_Set.xml", "", 6)
+lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/CHIPIR_Filter_SetApp/protocol/CHIPIR_Filter_Set.xml", "$(LVDCOMHOST=localhost)", 6, "", "", "")
 dbLoadRecords("$(TOP)/db/CHIPIR_Filter_Set.db","P=$(MYPVPREFIX)CHIPIR_FILTER_SET:")
 
 ##ISIS## Stuff that needs to be done after all records are loaded but before iocInit is called 
