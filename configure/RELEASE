@@ -49,6 +49,6 @@ ZLIB=$(SUPPORT)/zlib/1-2-8
 ## add other modules here ##
 
 LVDCOM=$(ISISSUPPORT)/lvDCOM
-ASYN=$(SUPPORT)/asyn/4-22
+ASYN=$(SUPPORT)/asyn/4-26
 ONCRPC=$(SUPPORT)/oncrpc/2
 include $(TOP)/../../ISIS_CONFIG.$(EPICS_HOST_ARCH)
